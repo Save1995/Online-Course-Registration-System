@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Course Registration System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              // Override 'blue' to match the new Teal/Green Brand Palette
+              blue: {
+                50: '#e0fcf8',
+                100: '#b8f3ec', // From Palette
+                200: '#8bded6', // From Palette
+                300: '#52c4ba', // From Palette
+                400: '#00b3a9', // From Palette (Bright Accent)
+                500: '#00989a', 
+                600: '#008178', // From Palette (Primary Standard)
+                700: '#00756e', // From Palette
+                800: '#005650', // From Palette (Deep Primary)
+                900: '#002824', // From Palette (Darkest)
+                950: '#001a18',
+              },
+              // Override 'gray' to match the provided Greyscale/Green-Grey Palette
+              gray: {
+                50: '#f4f7f7',  // Custom very light tint
+                100: '#e4e6e6', // From Palette
+                200: '#cfd8d8', // From Palette
+                300: '#b5c7c6', // From Palette
+                400: '#96adad', // From Palette
+                500: '#7c9999', // From Palette
+                600: '#3d5757', // From Palette
+                700: '#2e4848', // From Palette (Sidebar Dark)
+                800: '#263a3a', // Interpolated Dark
+                900: '#1e2d2d', // From Palette (Darkest)
+                950: '#0f1717',
+              }
+            },
+            fontFamily: {
+              sans: ['Kanit', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Kanit', sans-serif;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "vite-plugin-singlefile": "https://aistudiocdn.com/vite-plugin-singlefile@^2.3.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
